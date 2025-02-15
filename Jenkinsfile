@@ -4,7 +4,7 @@ pipeline {
         stage('Checkout') {
             steps {
                 // Checkout your source code from version control
-                git 'https://github.com/hkshitesh/SL-CICD-MAVEN-18-JAN.git'
+                git branch 'master' 'https://github.com/hkshitesh/SL-CICD-MAVEN-18-JAN.git'
             }
         }
         stage('Build') {
